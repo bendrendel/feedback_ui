@@ -3,17 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
-    /> -->
+    />
     <link rel="stylesheet" href="./style.css" type="text/css" />
     <script src="script.js" defer></script>
-    <title>My Project</title>
+    <title>Feedback UI Design</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
+    <form id="review-form">
+      <p>How satisfied are you with our customer support performance?</p>
+
+      <input type="radio" id="unhappy" name="review" value="unhappy">
+      <label for="unhappy">
+        <i class="fas fa-frown"></i>
+        <p>Unhappy</p>        
+      </label>
+
+      <input type="radio" id="neutral" name="review" value="neutral">
+      <label for="neutral">
+        <i class="fas fa-meh"></i>
+        <p>Neutral</p>        
+      </label>
+      
+      <input type="radio" id="satisfied" name="review" value="satisfied">
+      <label for="satisfied">
+        <i class="fas fa-smile"></i>
+        <p>Satisfied</p>        
+      </label>
+
+      <input type="submit" value="Send Review">
+    </form>
   </body>
 </html>
