@@ -14,28 +14,27 @@
     <title>Feedback UI Design</title>
   </head>
   <body>
-    <form id="review-form">
-      <p>How satisfied are you with our customer support performance?</p>
+    <div class="review-panel" id="review-panel">
+      <strong>How satisfied are you with our customer support performance?</strong>
 
-      <input type="radio" id="unhappy" name="review" value="unhappy">
-      <label for="unhappy">
-        <i class="fas fa-frown"></i>
-        <p>Unhappy</p>        
-      </label>
+      <div class="ratings-container">
+        <div class="rating active">
+          <img src="https://image.flaticon.com/icons/svg/187/187150.svg" alt="Unhappy emoji">
+          <small>Unhappy</small>
+        </div>
 
-      <input type="radio" id="neutral" name="review" value="neutral">
-      <label for="neutral">
-        <i class="fas fa-meh"></i>
-        <p>Neutral</p>        
-      </label>
-      
-      <input type="radio" id="satisfied" name="review" value="satisfied">
-      <label for="satisfied">
-        <i class="fas fa-smile"></i>
-        <p>Satisfied</p>        
-      </label>
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187136.svg" alt="Neutral emoji">
+          <small>Neutral</small>
+        </div>
 
-      <input type="submit" value="Send Review">
-    </form>
+        <div class="rating">
+          <img src="https://image.flaticon.com/icons/svg/187/187133.svg" alt="Satisfied emoji">
+          <small>Satisfied</small>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submit-btn">Send Review</button>
+    </div>
   </body>
 </html>
